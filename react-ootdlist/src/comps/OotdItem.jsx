@@ -20,6 +20,7 @@ const OotdItem = (props) => {
       </div>
       <div className="sdate">
         <div>{item.sdate}</div>
+        <div>{item.dayOfWeek}</div>
         <div>{item.stime}</div>
       </div>
       <div
