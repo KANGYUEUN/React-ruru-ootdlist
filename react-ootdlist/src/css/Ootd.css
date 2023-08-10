@@ -1,0 +1,99 @@
+.ootd .input {
+  display: flex;
+}
+
+.ootd .input input {
+  flex: 3;
+  padding: 8px;
+  margin: 3px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+.ootd .input button {
+  flex: 1;
+  padding: 12px 16px;
+  margin: 5px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  background-color: pink;
+  color: black;
+  font-weight: 700;
+}
+
+.ootd .input button:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.ootd .input button:disabled {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #ddd;
+}
+
+.ootd .input button.update {
+  background-color: #634bd1;
+  color: white;
+}
+
+.ootd .item {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.ootd .item div {
+  padding: 8px;
+  margin: 5px;
+}
+
+.ootd .item .delete,
+.ootd .item .complete {
+  font-size: 20px;
+  font-weight: 800;
+  color: #777;
+  vertical-align: center;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+.ootd .item:hover .delete,
+.ootd .item:hover .complete {
+  opacity: 1;
+}
+
+.ootd .item .delete:hover,
+.ootd .item .complete:hover {
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 50px;
+}
+
+.ootd .item .sdate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #888;
+  font-size: 8px;
+}
+
+.ootd .item .sdate div {
+  margin: 0;
+  padding: 0;
+}
+
+.ootd .item .content {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ootd .item .content.line {
+  text-decoration: line-through;
+  text-decoration-color: blue;
+  color: #999;
+}
