@@ -1,4 +1,5 @@
 import { OotdSample } from "../data/OotdSample";
+import "../css/icon.css";
 
 // 제작자가 제안하는 List
 const OotdSugList = () => {
@@ -10,12 +11,17 @@ const OotdSugList = () => {
           <li key={item.id}>
             <span>{item.today}</span>
             <span>{item.content}</span>
-            {item.link && (
-              <a href={item.link}>
-                <img src="/src/con/top.png" alt="top" />
-              </a>
-            )}
-            {item.complete ? <span>완료</span> : <span>미완료</span>}
+            <div className="top_icon">
+              {item.link && (
+                <a href={item.link}>
+                  <img src="/images/top.png" alt="top" />
+                  <img src="/images/bottom.png" alt="bottom" />
+                  <img src="/images/setup.png" alt="setup" />
+                  <img src="/images/shoes.png" alt="shoes" />
+                </a>
+              )}
+            </div>
+            {/* {item.complete ? <span>완료</span> : <span>미완료</span>} */}
           </li>
         ))}
       </ul>

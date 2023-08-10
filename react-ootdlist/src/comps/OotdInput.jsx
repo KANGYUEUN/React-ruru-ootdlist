@@ -15,10 +15,17 @@ const OotdInput = (props) => {
   return (
     <div className="input">
       <input
-        placeholder="OOTD"
+        placeholder="OOTD memo"
         value={ootd.content}
         onChange={inputChangeHandler}
       />
+      <input
+        type="file"
+        accept="image/*"
+        id="myootd_image"
+        multiple="multiple"
+      />
+
       <button
         onClick={btnClickHandler}
         disabled={ootd.content.length < 2}

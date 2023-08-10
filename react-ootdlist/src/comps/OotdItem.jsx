@@ -29,7 +29,7 @@ const OotdItem = (props) => {
         {item.content}
       </div>
       <div className="complete" onClick={(e) => compClickHandler(e, item.id)}>
-        &#x2713;
+        &#9829;
       </div>
     </div>
   );
