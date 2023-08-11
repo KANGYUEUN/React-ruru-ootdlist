@@ -94,7 +94,7 @@
 
 .ootd .item .content.line {
   text-decoration: line-through;
-  text-decoration-color: blue;
+  text-decoration-color: red;
   color: #999;
 }
 

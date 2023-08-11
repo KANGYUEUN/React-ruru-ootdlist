@@ -13,7 +13,7 @@ const OotdSugList = () => {
             <span>{item.content}</span>
             <div className="top_icon">
               {item.link && (
-                <a href={item.link}>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <img src="/images/top.png" alt="top" />
                   <img src="/images/bottom.png" alt="bottom" />
                   <img src="/images/setup.png" alt="setup" />
