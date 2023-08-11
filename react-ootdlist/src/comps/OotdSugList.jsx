@@ -9,7 +9,7 @@ const OotdSugList = () => {
       <ul>
         {OotdSample.map((item) => (
           <li key={item.id}>
-            <span>{item.today}</span>
+            <span>{item.dayOfWeek} &#09;: </span>
             <span>{item.content}</span>
             <div className="top_icon">
               {item.link && (

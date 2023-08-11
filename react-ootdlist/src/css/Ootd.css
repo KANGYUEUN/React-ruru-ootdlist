@@ -97,3 +97,7 @@
   text-decoration-color: blue;
   color: #999;
 }
+
+.ootd ul li::marker {
+  display: none !important;
+}
